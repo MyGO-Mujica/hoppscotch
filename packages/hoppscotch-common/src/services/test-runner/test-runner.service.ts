@@ -116,9 +116,6 @@ export class TestRunnerService extends Service {
           console.error("Test runner failed:", error)
         }
       })
-      .finally(() => {
-        tab.value.document.status = "stopped"
-      })
   }
 
   private async runTestCollection(
